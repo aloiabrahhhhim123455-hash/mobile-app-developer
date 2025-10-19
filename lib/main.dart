@@ -2,11 +2,11 @@ import 'package:electronic_rosary/page/home.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 
-void main() async{
+void main() async {
   runApp(const MyApp());
-    await SystemChrome.setPreferredOrientations([
-    DeviceOrientation.portraitUp, 
-    DeviceOrientation.portraitDown,  
+  await SystemChrome.setPreferredOrientations([
+    DeviceOrientation.portraitUp,
+    DeviceOrientation.portraitDown,
   ]);
 }
 
@@ -17,7 +17,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      home: home(),
-    );
+      home: home()
+      );
   }
 }
